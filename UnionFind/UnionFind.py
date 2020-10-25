@@ -1,6 +1,6 @@
 class UnionFind:
     """
-    UnionFind or DisjoinSet data-structure. Zero indexed.
+    UnionFind or DisjoinSet data-structure with Path compression. Zero indexed.
 
     Initialize:
         UnionFind(n)
