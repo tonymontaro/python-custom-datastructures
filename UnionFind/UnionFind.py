@@ -1,6 +1,14 @@
 class UnionFind:
     """
     UnionFind or DisjoinSet data-structure. Zero indexed.
+
+    Initialize:
+        UnionFind(n)
+    Methods:
+        unify(p, q)        # unify p and q
+        connected(p, q)    # is p connected to q (return bool)
+        find(p)            # find the parent of q
+        getSize(p)         # return the group size of p
     """
     def __init__(self, n):
         self.size = n
@@ -26,6 +34,8 @@ class UnionFind:
     def unify(self, p, q):
         root1 = self.find(p)
         root2 = self.find(q)
+        if root1 == root2:
+            return
         if self.sizes[root1] < self.sizes[root2]:
             self.parents[root1] = root2
             self.sizes[root2] += self.sizes[root1]
