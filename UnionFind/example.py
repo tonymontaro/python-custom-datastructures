@@ -10,7 +10,7 @@ lines = """4 7
 1 1 3"""
 lines = lines.split("\n")
 n, q = [int(i) for i in lines[0].split()]
-n, q
+
 disjoint = UnionFind(n)
 for i in range(1, q + 1):
     typ, p, q = [int(j) for j in lines[i].split()]
