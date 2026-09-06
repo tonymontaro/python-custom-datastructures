@@ -1,4 +1,5 @@
 from UnionFind import UnionFind
+# example: https://atcoder.jp/contests/practice2/tasks/practice2_a
 
 lines = """4 7
 1 0 1

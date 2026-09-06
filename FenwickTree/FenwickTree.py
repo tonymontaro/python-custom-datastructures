@@ -1,5 +1,5 @@
+"""One indexed FenwickTree (Binary Indexed Tree)"""
 class FenwickTree:
-    """One indexed FenwickTree (Binary Indexed Tree)"""
     def __init__(self, n, arr=[]):
         self.tree = [0] * (n + 1)
         self.n = n

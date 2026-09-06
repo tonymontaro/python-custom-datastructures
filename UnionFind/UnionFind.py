@@ -1,15 +1,15 @@
-class UnionFind:
-    """
-    UnionFind or DisjoinSet data-structure with Path compression. Zero indexed.
+"""
+UnionFind or DisjoinSet data-structure with Path compression. Zero indexed.
 
-    Initialize:
-        UnionFind(n)
-    Methods:
-        unify(p, q)        # unify p and q
-        connected(p, q)    # is p connected to q (return bool)
-        find(p)            # find the parent of q
-        getSize(p)         # return the group size of p
-    """
+Initialize:
+    UnionFind(n)
+Methods:
+    unify(p, q)        # unify p and q
+    connected(p, q)    # is p connected to q (return bool)
+    find(p)            # find the parent of q
+    getSize(p)         # return the group size of p
+"""
+class UnionFind:
     def __init__(self, n):
         self.size = n
         self.groups = n

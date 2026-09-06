@@ -1,25 +1,25 @@
+"""
+Randomized ordered multiset.
+Supported operations:
+    add(x)
+    discard(x)
+    remove(x) # raises
+    count(x)
+
+    lower_bound(x)
+    upper_bound(x)
+    bisect_left(x)
+    bisect_right(x)
+    predecessor(x)
+    floor(x)
+    kth(k)
+
+    minimum()
+    maximum()
+    len(t)
+    x in t: iteration in sorted order
+"""
 class TreapMultiSet:
-    """
-    Randomized ordered multiset.
-    Supported operations:
-        add(x)
-        discard(x)
-        remove(x) # raises
-        count(x)
-
-        lower_bound(x)
-        upper_bound(x)
-        bisect_left(x)
-        bisect_right(x)
-        predecessor(x)
-        floor(x)
-        kth(k)
-
-        minimum()
-        maximum()
-        len(t)
-        x in t: iteration in sorted order
-    """
     _MASK64 = (1 << 64) - 1
     __slots__ = ("root", "_rng_state")
 
